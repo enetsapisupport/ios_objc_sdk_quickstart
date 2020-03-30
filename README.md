@@ -6,4 +6,4 @@ See the ENETS Merchant Integration Guide at the [ENETS Developer Portal](https:/
 
 **Note:** If you want to receive the response from the ENETS backend, you need to replace the Dummy URLs in ther Txn Request with your own urls.
 
-This project is built in XCode 11.3.1 with Objective-C
+This project is built in XCode 11.3.1
