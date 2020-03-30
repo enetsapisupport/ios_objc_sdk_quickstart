@@ -1,0 +1,6 @@
+framework module ENETSLib {
+  umbrella header "ENETSLib.h"
+
+  export *
+  module * { export * }
+}
