@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		96D508EA223BA63600D63668 /* ENETSLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D508E2223BA63500D63668 /* ENETSLib.framework */; };
 		96D508EB223BA63600D63668 /* ENETSLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 96D508E2223BA63500D63668 /* ENETSLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		96D508F8223BAAE100D63668 /* ENETSLibWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D508F7223BAAE100D63668 /* ENETSLibWrapper.swift */; };
+		CDB754ED2856D8F000840EFB /* ThreeDS_SDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB754EB2856D8E700840EFB /* ThreeDS_SDK.xcframework */; };
+		CDB754EE2856D8F000840EFB /* ThreeDS_SDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDB754EB2856D8E700840EFB /* ThreeDS_SDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CDB754EE2856D8F000840EFB /* ThreeDS_SDK.xcframework in Embed Frameworks */,
 				96D508EB223BA63600D63668 /* ENETSLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -55,6 +58,7 @@
 		96D508D8223BA58C00D63668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96D508E2223BA63500D63668 /* ENETSLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ENETSLib.framework; sourceTree = "<group>"; };
 		96D508F7223BAAE100D63668 /* ENETSLibWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENETSLibWrapper.swift; sourceTree = "<group>"; };
+		CDB754EB2856D8E700840EFB /* ThreeDS_SDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ThreeDS_SDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB754ED2856D8F000840EFB /* ThreeDS_SDK.xcframework in Frameworks */,
 				96D508EA223BA63600D63668 /* ENETSLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +84,7 @@
 		96D508B5223BA58A00D63668 = {
 			isa = PBXGroup;
 			children = (
+				CDB754EB2856D8E700840EFB /* ThreeDS_SDK.xcframework */,
 				96D508E2223BA63500D63668 /* ENETSLib.framework */,
 				96D508C0223BA58A00D63668 /* ENETS SDK QuickStart */,
 				96D508D5223BA58C00D63668 /* ENETS SDK QuickStartTests */,
@@ -401,6 +407,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -425,6 +432,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};

@@ -14,6 +14,7 @@ struct EnumServiceType {
     NSString * const CC;
     NSString * const CC_AMEX;
     NSString * const CC_SGD;
+    NSString * const CC_SGD_3DS;
     NSString * const CC_SGD_AMEX;
     NSString * const DD;
     NSString * const NETS2;

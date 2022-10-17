@@ -12,9 +12,9 @@ import ENETSLib
 class ViewController: UIViewController, PaymentRequestCallback, PaymentRequestDelegate, UITextFieldDelegate {
     
     //Replace the UMID details with your own if you prefer
-    static let apiKeyUat = "154eb31c-0f72-45bb-9249-84a1036fd1ca"
-    static let secretKeyUat = "38a4b473-0295-439d-92e1-ad26a8c60279"
-    static let MID_UAT = "UMID_877772003"
+    static let apiKeyUat = "a63c094d-cb5f-4c79-a3a1-68322fcaffe7"
+    static let secretKeyUat = "82950ca1-75ec-41b0-b2e7-e8871b36721d"
+    static let MID_UAT = "UMID_877767000"
     
     //Replace These dummy URLs if you want to get the host response
     static let dummyB2sTxnEndUrlParam = "gateway=http://sit2.enets.sg"
@@ -66,6 +66,7 @@ class ViewController: UIViewController, PaymentRequestCallback, PaymentRequestDe
             
             // Send Payment request to eNETS mobile SDK
             let request = PaymentRequest(hmac:hmac, txnReq : txnRequest)
+            paymentManager.setLogEnabled(true)
             paymentManager.sendPaymentRequest(apiKey,
                                               paymentRequest: request,
                                               viewController: self)
